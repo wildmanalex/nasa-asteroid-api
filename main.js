@@ -29,117 +29,143 @@ $(document).ready(function(){
 	for(let asteroid of data.near_earth_objects['2017-10-19']) {
 				console.log(asteroid)
 		if(asteroid.is_potentially_hazardous_asteroid === true) {
-			console.log('fdsafsfdsasafds')
+			var asteroidname = asteroid.name;
+			$('.2017-10-19').append(`<div class="newasteroid">${asteroidname}</div>`);
 			if(asteroid.estimated_diameter.feet) {
-				console.log(asteroid.estimated_diameter.feet.estimated_diameter_max);
+				var asteroiddiameter = asteroid.estimated_diameter.feet.estimated_diameter_max;
+				$('.2017-10-19').append(`<div class="asteroiddiameter">${asteroiddiameter}</div>`);
 			}
 			if(asteroid.close_approach_data['0'].relative_velocity) {
-				console.log(asteroid.close_approach_data['0'].relative_velocity.miles_per_hour)
+				var velocity = asteroid.close_approach_data['0'].relative_velocity.miles_per_hour;
+				$('.2017-10-19').append(`<div class="velocity">${velocity}</div>`);
 			}
 			if(asteroid.close_approach_data['0'].miss_distance) {
-				console.log(asteroid.close_approach_data['0'].miss_distance.miles)
+				var distance = asteroid.close_approach_data['0'].miss_distance.miles;
+				$('.2017-10-19').append(`<div class="distance">${distance}</div>`)
 			}
 		}
 	}
 // 2017-10-20
 	for(let asteroid of data.near_earth_objects['2017-10-20']) {
-			console.log(asteroid)
+				console.log(asteroid)
 		if(asteroid.is_potentially_hazardous_asteroid === true) {
-			console.log('fdsafsfdsasafds')
+			var asteroidname = asteroid.name;
+			$('.2017-10-20').append(`<div class="newasteroid">${asteroidname}</div>`);
 			if(asteroid.estimated_diameter.feet) {
-				console.log(asteroid.estimated_diameter.feet.estimated_diameter_max);
+				var asteroiddiameter = asteroid.estimated_diameter.feet.estimated_diameter_max;
+				$('.2017-10-20').append(`<div class="asteroiddiameter">${asteroiddiameter}</div>`);
 			}
 			if(asteroid.close_approach_data['0'].relative_velocity) {
-				console.log(asteroid.close_approach_data['0'].relative_velocity.miles_per_hour)
+				var velocity = asteroid.close_approach_data['0'].relative_velocity.miles_per_hour;
+				$('.2017-10-20').append(`<div class="velocity">${velocity}</div>`);
 			}
 			if(asteroid.close_approach_data['0'].miss_distance) {
-				console.log(asteroid.close_approach_data['0'].miss_distance.miles)
+				var distance = asteroid.close_approach_data['0'].miss_distance.miles;
+				$('.2017-10-20').append(`<div class="distance">${distance}</div>`)
 			}
 		}
 	}
 // 2017-10-21
 	for(let asteroid of data.near_earth_objects['2017-10-21']) {
-			console.log(asteroid)
+				console.log(asteroid)
 		if(asteroid.is_potentially_hazardous_asteroid === true) {
-			console.log('fdsafsfdsasafds')
+			var asteroidname = asteroid.name;
+			$('.2017-10-21').append(`<div class="newasteroid">${asteroidname}</div>`);
 			if(asteroid.estimated_diameter.feet) {
-				console.log(asteroid.estimated_diameter.feet.estimated_diameter_max);
+				var asteroiddiameter = asteroid.estimated_diameter.feet.estimated_diameter_max;
+				$('.2017-10-21').append(`<div class="asteroiddiameter">${asteroiddiameter}</div>`);
 			}
 			if(asteroid.close_approach_data['0'].relative_velocity) {
-				console.log(asteroid.close_approach_data['0'].relative_velocity.miles_per_hour)
+				var velocity = asteroid.close_approach_data['0'].relative_velocity.miles_per_hour;
+				$('.2017-10-21').append(`<div class="velocity">${velocity}</div>`);
 			}
 			if(asteroid.close_approach_data['0'].miss_distance) {
-				console.log(asteroid.close_approach_data['0'].miss_distance.miles)
+				var distance = asteroid.close_approach_data['0'].miss_distance.miles;
+				$('.2017-10-21').append(`<div class="distance">${distance}</div>`)
 			}
 		}
 	}
 // 2017-10-22
 	for(let asteroid of data.near_earth_objects['2017-10-22']) {
-			console.log(asteroid)
+				console.log(asteroid)
 		if(asteroid.is_potentially_hazardous_asteroid === true) {
-			console.log('fdsafsfdsasafds')
+			var asteroidname = asteroid.name;
+			$('.2017-10-22').append(`<div class="newasteroid">${asteroidname}</div>`);
 			if(asteroid.estimated_diameter.feet) {
-				console.log(asteroid.estimated_diameter.feet.estimated_diameter_max);
+				var asteroiddiameter = asteroid.estimated_diameter.feet.estimated_diameter_max;
+				$('.2017-10-22').append(`<div class="asteroiddiameter">${asteroiddiameter}</div>`);
 			}
 			if(asteroid.close_approach_data['0'].relative_velocity) {
-				console.log(asteroid.close_approach_data['0'].relative_velocity.miles_per_hour)
+				var velocity = asteroid.close_approach_data['0'].relative_velocity.miles_per_hour;
+				$('.2017-10-22').append(`<div class="velocity">${velocity}</div>`);
 			}
 			if(asteroid.close_approach_data['0'].miss_distance) {
-				console.log(asteroid.close_approach_data['0'].miss_distance.miles)
+				var distance = asteroid.close_approach_data['0'].miss_distance.miles;
+				$('.2017-10-22').append(`<div class="distance">${distance}</div>`)
 			}
 		}
 	}
 // 2017-10-23
 	for(let asteroid of data.near_earth_objects['2017-10-23']) {
-			console.log(asteroid)
+				console.log(asteroid)
 		if(asteroid.is_potentially_hazardous_asteroid === true) {
-			console.log('fdsafsfdsasafds')
+			var asteroidname = asteroid.name;
+			$('.2017-10-23').append(`<div class="newasteroid">${asteroidname}</div>`);
 			if(asteroid.estimated_diameter.feet) {
-				console.log(asteroid.estimated_diameter.feet.estimated_diameter_max);
+				var asteroiddiameter = asteroid.estimated_diameter.feet.estimated_diameter_max;
+				$('.2017-10-23').append(`<div class="asteroiddiameter">${asteroiddiameter}</div>`);
 			}
 			if(asteroid.close_approach_data['0'].relative_velocity) {
-				console.log(asteroid.close_approach_data['0'].relative_velocity.miles_per_hour)
+				var velocity = asteroid.close_approach_data['0'].relative_velocity.miles_per_hour;
+				$('.2017-10-23').append(`<div class="velocity">${velocity}</div>`);
 			}
 			if(asteroid.close_approach_data['0'].miss_distance) {
-				console.log(asteroid.close_approach_data['0'].miss_distance.miles)
+				var distance = asteroid.close_approach_data['0'].miss_distance.miles;
+				$('.2017-10-23').append(`<div class="distance">${distance}</div>`)
 			}
 		}
 	}
 // 2017-10-24
 	for(let asteroid of data.near_earth_objects['2017-10-24']) {
-			console.log(asteroid)
+				console.log(asteroid)
 		if(asteroid.is_potentially_hazardous_asteroid === true) {
-			console.log('fdsafsfdsasafds')
+			var asteroidname = asteroid.name;
+			$('.2017-10-24').append(`<div class="newasteroid">${asteroidname}</div>`);
 			if(asteroid.estimated_diameter.feet) {
-				console.log(asteroid.estimated_diameter.feet.estimated_diameter_max);
+				var asteroiddiameter = asteroid.estimated_diameter.feet.estimated_diameter_max;
+				$('.2017-10-24').append(`<div class="asteroiddiameter">${asteroiddiameter}</div>`);
 			}
 			if(asteroid.close_approach_data['0'].relative_velocity) {
-				console.log(asteroid.close_approach_data['0'].relative_velocity.miles_per_hour)
+				var velocity = asteroid.close_approach_data['0'].relative_velocity.miles_per_hour;
+				$('.2017-10-24').append(`<div class="velocity">${velocity}</div>`);
 			}
 			if(asteroid.close_approach_data['0'].miss_distance) {
-				console.log(asteroid.close_approach_data['0'].miss_distance.miles)
+				var distance = asteroid.close_approach_data['0'].miss_distance.miles;
+				$('.2017-10-24').append(`<div class="distance">${distance}</div>`)
 			}
 		}
 	}
 // 2017-10-25
 	for(let asteroid of data.near_earth_objects['2017-10-25']) {
-			console.log(asteroid)
+				console.log(asteroid)
 		if(asteroid.is_potentially_hazardous_asteroid === true) {
-			console.log('fdsafsfdsasafds')
+			var asteroidname = asteroid.name;
+			$('.2017-10-25').append(`<div class="newasteroid">${asteroidname}</div>`);
 			if(asteroid.estimated_diameter.feet) {
-				console.log(asteroid.estimated_diameter.feet.estimated_diameter_max);
+				var asteroiddiameter = asteroid.estimated_diameter.feet.estimated_diameter_max;
+				$('.2017-10-25').append(`<div class="asteroiddiameter">${asteroiddiameter}</div>`);
 			}
 			if(asteroid.close_approach_data['0'].relative_velocity) {
-				console.log(asteroid.close_approach_data['0'].relative_velocity.miles_per_hour)
+				var velocity = asteroid.close_approach_data['0'].relative_velocity.miles_per_hour;
+				$('.2017-10-25').append(`<div class="velocity">${velocity}</div>`);
 			}
 			if(asteroid.close_approach_data['0'].miss_distance) {
-				console.log(asteroid.close_approach_data['0'].miss_distance.miles)
+				var distance = asteroid.close_approach_data['0'].miss_distance.miles;
+				$('.2017-10-25').append(`<div class="distance">${distance}</div>`)
 			}
 		}
 	}
-
 //end of week
-
 	});
 });
 //find potentially hazardous asteroids
