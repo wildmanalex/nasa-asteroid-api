@@ -1,19 +1,27 @@
 $(document).ready(function(){
 	$.get('https://api.nasa.gov/neo/rest/v1/feed?start_date=2017-10-18&end_date=2017-10-25&api_key=uBbS7vZx5Jtx6pAfsZBVVrMThUPYxy6eMNq7m8iG', function(data){
 		console.log(data);
+
+
+
+
 // 2017-10-18
 	for(let asteroid of data.near_earth_objects['2017-10-18']) {
 				console.log(asteroid)
 		if(asteroid.is_potentially_hazardous_asteroid === true) {
-			console.log('fdsafsfdsasafds')
+			var asteroidname = asteroid.name;
+			$('.2017-10-18').append(`<div class="newasteroid">${asteroidname}</div>`);
 			if(asteroid.estimated_diameter.feet) {
-				console.log(asteroid.estimated_diameter.feet.estimated_diameter_max);
+				var asteroiddiameter = asteroid.estimated_diameter.feet.estimated_diameter_max;
+				$('.2017-10-18').append(`<div class="asteroiddiameter">${asteroiddiameter}</div>`);
 			}
 			if(asteroid.close_approach_data['0'].relative_velocity) {
-				console.log(asteroid.close_approach_data['0'].relative_velocity.miles_per_hour)
+				var velocity = asteroid.close_approach_data['0'].relative_velocity.miles_per_hour;
+				$('.2017-10-18').append(`<div class="velocity">${velocity}</div>`);
 			}
 			if(asteroid.close_approach_data['0'].miss_distance) {
-				console.log(asteroid.close_approach_data['0'].miss_distance.miles)
+				var distance = asteroid.close_approach_data['0'].miss_distance.miles;
+				$('.2017-10-18').append(`<div class="distance">${distance}</div>`)
 			}
 		}
 	}
