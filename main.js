@@ -9,12 +9,13 @@ for(let asteroid of data.near_earth_objects['2017-10-19']) {
 		if(asteroid.estimated_diameter.feet) {
 			console.log(asteroid.estimated_diameter.feet.estimated_diameter_max);
 		}
-		if(asteroid.close_approach_data['0'].relative_velocity){
+		if(asteroid.close_approach_data['0'].relative_velocity) {
 			console.log(asteroid.close_approach_data['0'].relative_velocity.miles_per_hour)
 		}
-		if()
+		if(asteroid.close_approach_data['0'].miss_distance) {
+			console.log(asteroid.close_approach_data['0'].miss_distance.miles)
+		}
 	}
-	
 }
 
 });
