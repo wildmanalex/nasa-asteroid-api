@@ -70,7 +70,7 @@ $(document).ready(function(){
 				console.log(asteroid)
 		if(asteroid.is_potentially_hazardous_asteroid === true) {
 			var asteroidname = asteroid.name;
-			$('.2017-10-21 .asteroidname').append(`<div class="newasteroid">${asteroidname}</div>`);
+			$('.2017-10-21 .asteroidname ul').append(`<li class="newasteroid">${asteroidname}</li>`);
 			if(asteroid.estimated_diameter.feet) {
 				var asteroiddiameter = asteroid.estimated_diameter.feet.estimated_diameter_max;
 				$('.2017-10-21 .diameter').append(`<div class="asteroiddiameter">${asteroiddiameter}</div>`);
